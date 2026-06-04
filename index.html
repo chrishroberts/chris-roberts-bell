@@ -30,7 +30,11 @@
   .brand span{color:var(--blue)}
   .navlinks a{color:var(--grey);font-size:13.5px;font-weight:600;margin-left:22px}
   .navlinks a:hover{color:var(--blue)}
-  @media(max-width:680px){.navlinks{display:none}}
+  @media(max-width:680px){
+    .nav .wrap{height:auto;flex-direction:column;align-items:flex-start;gap:8px;padding-top:10px;padding-bottom:12px}
+    .navlinks{display:flex;flex-wrap:wrap;gap:8px 18px;width:100%}
+    .navlinks a{margin-left:0;font-size:13px}
+  }
 
   /* HERO */
   .hero{background:linear-gradient(135deg,var(--navy) 0%,#073a78 55%,var(--blue) 130%);color:#fff;padding:64px 0 72px;position:relative;overflow:hidden}
